@@ -13,10 +13,7 @@
         <h2 class="text-center">Jogo da forca</h2>
     </div>
     <div class="container">
-
-        <!-- div com a classe sprite -->
         <div class="sprite"></div>
-        
         <ul class="lacunas text-center"></ul>
 
         <div class="text-center">
@@ -28,6 +25,12 @@
 
     <script src="js/jquery.min.js"></script>
     <script src="js/sprite.js"></script>
-       
+    <script src="js/jogo.js"></script>
+    <script src="js/controller.js"></script>
+    <script>
+        var sprite = createSprite('.sprite');
+        var jogo = criaJogo(sprite);
+        criaController(jogo);
+    </script>
 </body>
 </html>
